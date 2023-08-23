@@ -1,0 +1,23 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#0f1624 0 0) padding-box,
+    linear-gradient(to right, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%)
+      border-box;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  height: 85vh;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.desc {
+  font-size: 18px;
+}
+
+.img{
+    width: 100%;
+}

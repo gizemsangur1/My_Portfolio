@@ -1,0 +1,9 @@
+.main {
+  display: grid;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.title{
+  font-size: 36px;
+}

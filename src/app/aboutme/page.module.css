@@ -1,13 +1,15 @@
 .main {
   display: grid;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 80vh;
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
+  padding-left: 6rem;
+  padding-right: rem;
   justify-content: center;
   align-items: center;
 }
@@ -15,14 +17,13 @@
 .about {
   height: 100%;
   width: 100%;
-  padding: 36px;
   position: relative;
 }
 
 .title {
   margin: 5px;
   font-size: 64px;
-  background: linear-gradient(to right, #13adc7, #6978d1, #945dd6);
+  background: linear-gradient(to right, #13adc7, #6978d1, #603c8b);
   background-clip:inherit;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
