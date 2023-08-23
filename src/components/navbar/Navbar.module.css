@@ -5,5 +5,17 @@
 }
 
 .link{
-    
+    font-size: 16px;
+}
+
+.link:hover{
+    font-size: 24px;
+    color: lightseagreen;
+}
+
+.title{
+    padding: 36px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
