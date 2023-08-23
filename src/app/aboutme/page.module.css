@@ -23,7 +23,7 @@
 .title {
   margin: 5px;
   font-size: 64px;
-  background: linear-gradient(to right, #13adc7, #6978d1, #603c8b);
+  background: linear-gradient(270deg, #13ADC7 10%, #6978D1 66.67%, #945DD6 90%);
   background-clip:inherit;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

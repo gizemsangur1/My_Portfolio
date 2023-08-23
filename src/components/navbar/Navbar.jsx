@@ -3,8 +3,9 @@ import { Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
-import { AiFillLinkedin } from 'react-icons/ai';
-import {AiFillGithub} from "react-icons/ai"
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { RxSun, RxMoon } from "react-icons/rx";
 const Navbar = () => {
   const title = "<GizemSangur/>";
   const [clickedItem, setClickedItem] = useState(false);
@@ -46,9 +47,9 @@ const Navbar = () => {
         <Typography sx={{ fontSize: "24px" }}>{title}</Typography>
       </Grid>
       <Grid md={6} sm={9} xs={9}>
-        <Grid container sx={{height:"100%"}} >
+        <Grid container sx={{ height: "100%" }}>
           {navlinks.map((item) => (
-            <Grid item xs={3}  className={styles.nav} key={item.id}>
+            <Grid item xs={3} className={styles.nav} key={item.id}>
               <Link
                 href={item.url}
                 className={styles.link}
@@ -63,13 +64,24 @@ const Navbar = () => {
         </Grid>
       </Grid>
       <Grid md={3} sm={3} xs={3}>
-        <Grid container sx={{height:"100%",justifyContent:"start",alignItems:"center"}} >
-          <Grid item xs={2}><AiFillLinkedin size={24}/></Grid>
-          <Grid item xs={2}><AiFillGithub size={24}/></Grid>
+        <Grid
+          container
+          sx={{ height: "100%", alignItems: "center" }}
+        >
+          <Grid item xs={2}>
+            <AiFillLinkedin size={24} />
+          </Grid>
+          <Grid item xs={2}>
+            <AiFillGithub size={24} />
+          </Grid>
           <Grid item xs={2}></Grid>
           <Grid item xs={2}></Grid>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={2}></Grid>
+          <Grid item xs={2} sx={{ justifyContent: "end",display:"grid",padding:"5px" }}>
+            <RxMoon size={24}/>
+          </Grid>
+          <Grid item xs={2} sx={{ justifyContent: "start",padding:"5px",display:"grid"  }}>
+            <RxSun size={24}/>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
