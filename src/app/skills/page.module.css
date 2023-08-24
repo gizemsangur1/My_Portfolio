@@ -1,8 +1,7 @@
 .main {
   display: grid;
-  padding-left: 6rem;
-  padding-right: 6rem;
   margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .title {
@@ -10,6 +9,25 @@
 }
 
 .skills{
+  display: grid;
+  justify-content: center;
+  align-items: center;
     font-size: 24px;
     padding: 10px;
+}
+
+.list {
+  list-style-type: none; 
+  padding-left: 20px; 
+}
+
+.list::before {
+  content: "\2022"; 
+  color: transparent; 
+  font-size: 64px;
+  background-image: linear-gradient(to right, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  display: inline-block; 
+  width: 24px; 
 }

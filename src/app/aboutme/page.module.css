@@ -8,8 +8,8 @@
 
 .container {
   width: 100vw;
-  padding-left: 6rem;
-  padding-right: rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   justify-content: center;
   align-items: center;
 }

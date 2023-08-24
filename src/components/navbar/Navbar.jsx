@@ -1,11 +1,8 @@
 "use client";
 import { Grid, Typography } from "@mui/material";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import styles from "./Navbar.module.css";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
-import { RxSun, RxMoon } from "react-icons/rx";
 const Navbar = () => {
   const title = "<GizemSangur/>";
   const [clickedItem, setClickedItem] = useState(false);
@@ -15,25 +12,19 @@ const Navbar = () => {
       id: 1,
       title: "About Me",
       click: "<AboutMe/>",
-      url: "/aboutme",
+      url: "#aboutme",
     },
     {
       id: 2,
       title: "Projects",
       click: "<Projects/>",
-      url: "/projects",
+      url: "#projects",
     },
     {
       id: 3,
       title: "Skills",
       click: "<Skills/>",
-      url: "/skills",
-    },
-    {
-      id: 4,
-      title: "Contact",
-      click: "<Contact/>",
-      url: "/contact",
+      url: "#skills",
     },
   ];
   const handleClick = (item) => {
@@ -46,10 +37,10 @@ const Navbar = () => {
       <Grid item md={3} sm={12} xs={12} className={styles.title}>
         <Typography sx={{ fontSize: "24px" }}>{title}</Typography>
       </Grid>
-      <Grid md={6} sm={9} xs={9}>
+      <Grid item md={9} sm={12} xs={12}>
         <Grid container sx={{ height: "100%" }}>
           {navlinks.map((item) => (
-            <Grid item xs={3} className={styles.nav} key={item.id}>
+            <Grid item xs={4} className={styles.nav} key={item.id}>
               <Link
                 href={item.url}
                 className={styles.link}
@@ -61,27 +52,6 @@ const Navbar = () => {
               </Link>
             </Grid>
           ))}
-        </Grid>
-      </Grid>
-      <Grid md={3} sm={3} xs={3}>
-        <Grid
-          container
-          sx={{ height: "100%", alignItems: "center" }}
-        >
-          <Grid item xs={2}>
-            <AiFillLinkedin size={24} />
-          </Grid>
-          <Grid item xs={2}>
-            <AiFillGithub size={24} />
-          </Grid>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={2} sx={{ justifyContent: "end",display:"grid",padding:"5px" }}>
-            <RxMoon size={24}/>
-          </Grid>
-          <Grid item xs={2} sx={{ justifyContent: "start",padding:"5px",display:"grid"  }}>
-            <RxSun size={24}/>
-          </Grid>
         </Grid>
       </Grid>
     </Grid>

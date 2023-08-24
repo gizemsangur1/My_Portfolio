@@ -13,14 +13,14 @@ const Skills = () => {
     { id: 8, name: "C1 English" },
   ];
   return (
-    <Grid container className={styles.main}>
+    <Grid container className={styles.main}  sx={{paddingLeft:{md:"6rem",sm:"1rem",xs:"1rem"},paddingRight:{md:"6rem",sm:"1rem",xs:"1rem"}}}>
       <Grid container direction="row">
-        <Typography className={styles.title}>Skills</Typography>
+        <Typography className={styles.title}>Skills and Technologies</Typography>
       </Grid>
       <Grid container direction="row" spacing={3} sx={{ marginTop: "24px" }}>
         {skills.map((item) => (
-          <Grid item xs={4} key={item.id} className={styles.skills}>
-            <ul>{item.name}</ul>
+          <Grid item md={3} sm={6} xs={6} key={item.id} className={styles.skills}>
+            <li className={styles.list}>{item.name}</li>
           </Grid>
         ))}
       </Grid>
