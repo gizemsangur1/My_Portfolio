@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
           <Navbar />
-          <AboutMe />
-          <Projects />
-          <Skills />
+          <AboutMe className="aboutme"/>
+          <Projects className="projects"/>
+          <Skills id="skills"/>
           <Footer/>
           
       </body>

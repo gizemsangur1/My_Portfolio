@@ -3,6 +3,7 @@ import { Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import React, {  useState } from "react";
 import styles from "./Navbar.module.css";
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 const Navbar = () => {
   const title = "<GizemSangur/>";
   const [clickedItem, setClickedItem] = useState(false);
@@ -12,19 +13,19 @@ const Navbar = () => {
       id: 1,
       title: "About Me",
       click: "<AboutMe/>",
-      url: "#aboutme",
+      url: "aboutme",
     },
     {
       id: 2,
       title: "Projects",
       click: "<Projects/>",
-      url: "#projects",
+      url: "projects",
     },
     {
       id: 3,
       title: "Skills",
       click: "<Skills/>",
-      url: "#skills",
+      url: "skills",
     },
   ];
   const handleClick = (item) => {
@@ -41,15 +42,17 @@ const Navbar = () => {
         <Grid container sx={{ height: "100%" }}>
           {navlinks.map((item) => (
             <Grid item xs={4} className={styles.nav} key={item.id}>
-              <Link
-                href={item.url}
+             <ScrollLink
+                to={item.url} 
+                smooth={true}
+                offset={-70} 
                 className={styles.link}
                 onClick={() => handleClick(item)}
               >
                 {clickedItem && clickedItemId === item.id
                   ? item.click
                   : item.title}
-              </Link>
+              </ScrollLink>
             </Grid>
           ))}
         </Grid>

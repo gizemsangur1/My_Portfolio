@@ -13,7 +13,7 @@ const Skills = () => {
     { id: 8, name: "C1 English" },
   ];
   return (
-    <Grid container className={styles.main}  sx={{paddingLeft:{md:"6rem",sm:"1rem",xs:"1rem"},paddingRight:{md:"6rem",sm:"1rem",xs:"1rem"}}}>
+    <Grid container className={styles.main}  sx={{paddingLeft:{md:"6rem",sm:"1rem",xs:"1rem"},paddingRight:{md:"6rem",sm:"1rem",xs:"1rem"}}} id="skills">
       <Grid container direction="row">
         <Typography className={styles.title}>Skills and Technologies</Typography>
       </Grid>

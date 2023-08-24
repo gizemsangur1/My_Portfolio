@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import Projectcards from "@/components/projectcards/Projectcards";
 const Projects = () => {
   return (
-    <Grid container className={styles.main} sx={{paddingLeft:{md:"6rem",sm:"1rem",xs:"1rem"},paddingRight:{md:"6rem",sm:"1rem",xs:"1rem"}}}>
+    <Grid container className={styles.main} sx={{paddingLeft:{md:"6rem",sm:"1rem",xs:"1rem"},paddingRight:{md:"6rem",sm:"1rem",xs:"1rem"}}} id="projects">
       <Grid container direction="row">
         <Grid item xs={12}>
           <Typography className={styles.title}>PROJECTS</Typography>

@@ -6,7 +6,7 @@ import CButton from "@/components/button/CButton";
 import Circles from "@/components/circles/Circles";
 const AboutMe = () => {
   return (
-    <Grid container className={styles.main}>
+    <Grid container className={styles.main} id="aboutme">
       <Circles/>
       <Grid container className={styles.container}>
         <Grid item className={styles.about}>
