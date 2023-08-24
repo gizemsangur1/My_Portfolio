@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### My Portfolio WebSite
 
-## Getting Started
 
-First, run the development server:
+## About Me 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<p> Little informations about me. And you can download my CV from that button.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img src="portfolio.jpeg">
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Projects
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<p>In here you can see my projects. Also you can see their live previews and see github codes.
 
-## Learn More
+<img src="projects.jpeg">
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Skills
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p> Here  you can look at couple skills that I have and technologies that I'm using.
 
-## Deploy on Vercel
+<img src="Skills.jpeg">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Versions
+<p> And from the little TARDIS at the corner you can see old version of my portfolio website.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src="versions.jpeg">
+
+
+<a href="#top">Back to top</a>
